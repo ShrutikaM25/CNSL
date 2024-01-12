@@ -48,7 +48,7 @@ def main():
     else:
         print("Invalid choice. Please select a valid option.")
 
-    client_socket.close()  # Close the socket when the client is done
+    client_socket.close()  
 
 if __name__ == "__main__":
     main()

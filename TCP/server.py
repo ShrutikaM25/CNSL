@@ -15,7 +15,7 @@ def file_transfer_server(server_socket):
         client_socket, client_address = server_socket.accept()
         print(f"Connection from {client_address}")
         file_name = "file_to_send.txt"
-        with open(file_name, 'rb') as file:
+        with open(file_name, 'wb') as file:
             data = file.read(1024)
             while data:
                 client_socket.send(data)
